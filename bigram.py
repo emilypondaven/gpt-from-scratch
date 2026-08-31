@@ -15,7 +15,7 @@ eval_iters = 200
 torch.manual_seed(1337)
 
 # input
-with open('./gpt-from-scratch/input.txt', 'r', encoding='utf-8') as f:
+with open('./input.txt', 'r', encoding='utf-8') as f:
     text = f.read()
     
 chars = sorted((list(set(text))))
