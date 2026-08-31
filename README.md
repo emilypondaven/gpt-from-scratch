@@ -1,2 +1,2 @@
 # gpt-from-scratch
-Trained decoder-only transformer, following "Attention is All you Need" paper
+Code for training decoder-only transformer, following "Attention is All you Need" paper.
