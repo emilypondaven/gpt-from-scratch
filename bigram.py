@@ -15,7 +15,7 @@ eval_iters = 200
 torch.manual_seed(1337)
 
 # input
-with open('input.txt', 'r', encoding='utf-8') as f:
+with open('./gpt-from-scratch/input.txt', 'r', encoding='utf-8') as f:
     text = f.read()
     
 chars = sorted((list(set(text))))
@@ -56,7 +56,7 @@ def estimate_loss():
             X, Y = get_batch(split)
             logits, loss = model(X, Y)
             losses[k] = loss.item()
-        out[split] - losses.mean()
+        out[split] = losses.mean()
     model.train()  ## change mode
     return out
 
